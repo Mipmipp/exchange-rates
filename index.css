@@ -65,3 +65,30 @@ body {
     background-color: #010100;
 }
 
+#footer-information {
+    text-align: -webkit-center
+}
+
+#footer-information div {
+    margin-top: 0.5rem;
+}
+
+.information-text {
+    color: #737373;
+}
+
+#footer-contact {
+    margin-top: -0.7rem;
+}
+
+#footer-contact a {
+    font-size: small;
+    color: #bdb9b9;
+    margin-top: -0.7rem !important;
+    border-color: #737373;
+}
+
+.link {
+    color: #bdb9b9;
+}
+
