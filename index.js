@@ -67,3 +67,19 @@ function getValuesEqualsOfCurrencies() {
   .catch(error => console.log('error', error));
 }
 
+function showEqualsOfCurrencies(equals) {
+  const $divRow = document.querySelector('#watch-currencies');
+  $divRow.innerHTML = '';
+
+  let keys = Object.keys(equals);
+  i = 0;
+
+  keys.forEach(function(key) {
+    const $div = document.createElement('div');
+    $div.className = 'col-3 col-md-3';
+    $div.innerText = `${key}: ${(arrayValues[0 + i])}`;
+    $divRow.appendChild($div);
+    i++;
+  })
+}
+
