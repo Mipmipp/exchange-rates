@@ -15,6 +15,26 @@ function getCurrenciesList() {
   .catch(error => console.log('error', error));
 }
 
+function getEveryCurrency(symbols) {
+  const $currencyBase = document.querySelector('#currency-base');
+  const $currencyToConvert = document.querySelector('#currency-to-convert');
+  let keys = Object.keys(symbols);
+
+  keys.forEach(function(key) {
+    const $option = document.createElement('option');
+    $option.value = key;
+    $option.textContent = key;
+    $currencyBase.appendChild($option);
+  });
+
+  keys.forEach(function(key) {
+    const $option = document.createElement('option');
+    $option.value = key;
+    $option.textContent = key;
+    $currencyToConvert.appendChild($option);
+  });
+}
+
 function getBaseEqualsOfCurrencies() {
   fetch("https://api.apilayer.com/exchangerates_data/latest?symbols=USD%2C%20EUR%2C%20JPY%2C%20GBP.%20AUD.%20CAD%2C%20CHF%2C%20CNY%2CSEK%2C%20MXN%2C%20NZD%2C%20SGD%2C%20HKD%2C%20NOK%2C%20KRW%2C%20TRY%2C%20INR%2C%20RUB%2C%20BRL&base=EUR", requestOptions)
   .then(response => response.json())
