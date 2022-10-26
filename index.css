@@ -92,3 +92,6 @@ body {
     color: #bdb9b9;
 }
 
+.error {
+    color: red !important;
+}
