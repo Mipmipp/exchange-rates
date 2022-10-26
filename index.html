@@ -14,5 +14,39 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
    </head>
    <body id="page-layout">
+      <main id="main">
+
+         <div id="presentation">
+            <h1>Exchange rates</h1>
+            <h4>convert any amount from one currency to another</h4>
+         </div>
+         
+         <div class="container">
+            <form class="row" id="row">
+               <div class="col-4 col-md-2">
+                  <label for="form-select">base currency</label>
+                  <select class="form-select" aria-label="Default select example" id="currency-base">
+                  </select>
+               </div>
+               <div class="col-4 col-md-2">
+                  <label id="label-amount" for="form-control">amount</label>
+                  <input type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" id="amount" name="input-amount">
+               </div>
+               <div class="col-4 col-md-2">
+                  <label for="form-select">currency to convert</label>
+                  <select class="form-select" aria-label="Default select example" id="currency-to-convert">
+                  </select>
+               </div>
+               <div class="col-12 col-md-2">
+                  <button class="btn btn-primary" type="submit" id="button">Convert</button>
+               </div>
+               <div class="col-6 col-md-2">
+                  <label for="form-select">result</label>
+                  <input class="form-control" type="text" aria-label="Disabled input example" id="result" disabled readonly>
+               </div>
+            </form>
+         </div>
+         <hr id="hr">
+
    </body>
 </html>
