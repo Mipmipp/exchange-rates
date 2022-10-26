@@ -7,6 +7,11 @@ let requestOptions = {
   headers: myHeaders
 };
 
+let currencyBase = null;
+let amount = null;
+let currencyToConvert = null;
+let arrayValues = null;
+let $button = document.getElementById('button');
 
 function getCurrenciesList() {
   fetch("https://api.apilayer.com/exchangerates_data/symbols", requestOptions)
@@ -106,3 +111,4 @@ $button.onclick = function(event) {
   }
 }
 
+getCurrenciesList();
