@@ -55,3 +55,13 @@ body {
     text-decoration: underline;
 }
 
+#main {
+    grid-area: main;
+    background-color: #0c0008;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: #010100;
+}
+
