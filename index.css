@@ -15,3 +15,25 @@ body {
     "footer" 5rem;
 }
 
+@media only screen and (max-width: 768px) {
+    #page-layout {
+        display: grid;
+        grid-template:
+        "main"   auto
+        "footer" 6.5rem;
+    }
+    #presentation h4 {
+        font-size: 1rem;
+        margin-top: -0.3rem;
+        margin-bottom: 2rem;
+    }
+
+    #row div {
+        margin-bottom: 2rem;
+    }
+
+    #watch-currencies {
+        margin-bottom: 1.5rem;
+    }
+}
+
