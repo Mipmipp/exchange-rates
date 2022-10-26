@@ -37,3 +37,21 @@ body {
     }
 }
 
+#presentation {
+    text-align: center;
+}
+
+#presentation h1 {
+    color: #fad953;
+    font-size: 2.3rem;
+    margin-top: 0.5rem;
+}
+
+#presentation h4 {
+    color: #ebd88f;
+    font-size: 1.3rem;
+    margin-top: -0.5rem;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+}
+
