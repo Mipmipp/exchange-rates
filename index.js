@@ -49,7 +49,7 @@ function convertCurrencyToOther() {
 
 function updateResult(result) {
   const $result = document.querySelector('#result');
-  $result.value = result;
+  $result.value = result.toFixed(2);
   const $containerCurrencies = document.querySelector('#container-currencies');
   const $containerCurrenciesText = document.querySelector('#text');
   $containerCurrenciesText.textContent = `Did you know that 1 ${currencyBase} is equivalent to these currencies?`;
@@ -82,7 +82,7 @@ function showEqualsOfCurrencies(equals) {
   keys.forEach(function(key) {
     const $div = document.createElement('div');
     $div.className = 'col-3 col-md-3';
-    $div.innerText = `${key}: ${(arrayValues[0 + i])}`;
+    $div.innerText = `${key}: ${(arrayValues[0 + i]).toFixed(2)}`;
     $divRow.appendChild($div);
     i++;
   })
