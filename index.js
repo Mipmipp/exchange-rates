@@ -83,3 +83,26 @@ function showEqualsOfCurrencies(equals) {
   })
 }
 
+$button.onclick = function(event) {
+  event.preventDefault()
+
+  const $currencyBase = document.querySelector('#currency-base').value;
+  const $amount = document.querySelector('#amount').value;
+  const $currencyToConvert = document.querySelector('#currency-to-convert').value;
+  currencyToConvert = $currencyToConvert;
+  currencyBase = $currencyBase;
+  amount = $amount;
+
+  getValuesEqualsOfCurrencies();
+
+  if(amount < 1) {
+    document.getElementsByName('input-amount')[0].placeholder = 'write here'
+    document.querySelector('#label-amount').className = 'error'
+  } else {
+    document.getElementsByName('input-amount')[0].placeholder = ''
+    document.querySelector('#label-amount').className = ''
+    convertCurrencyToOther();
+    getBaseEqualsOfCurrencies();
+  }
+}
+
