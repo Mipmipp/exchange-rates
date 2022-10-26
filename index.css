@@ -1,0 +1,17 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: auto;
+    font-family: 'Manrope', sans-serif;
+}
+
+#page-layout {
+    display: grid;
+    grid-template:
+    "main"   auto
+    "footer" 5rem;
+}
+
