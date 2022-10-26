@@ -65,6 +65,38 @@ body {
     background-color: #010100;
 }
 
+#row {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#row div {
+    text-align: center;
+}
+
+#row select {
+    border-color: #0c0008;
+    background-color: #ffffff;
+    color: #0c0008;
+}
+
+#row input {
+    border-color: #0c0008;
+    background-color: #ffffff;
+    color: #0c0008;
+}
+
+#row label {
+    color: #e189fe;
+    margin-bottom: 0.2rem;
+}
+
+#button {
+    border-color: #e189fe;
+    background-color: #0c0008;
+    color: #e189fe;
+}
+
 
 .col-3 {
     margin-bottom: 1rem !important;
