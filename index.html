@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>exchange rates</title>
+      <link rel="icon" href="icon/icon.ico">
+      <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+      </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+   </head>
+   <body id="page-layout">
+      <main id="main">
+
+         <div id="presentation">
+            <h1>Exchange rates</h1>
+            <h4>convert any amount from one currency to another</h4>
+         </div>
+         
+         <div class="container">
+            <form class="row" id="row">
+               <div class="col-4 col-md-2">
+                  <label for="form-select">base currency</label>
+                  <select class="form-select" aria-label="Default select example" id="currency-base">
+                  </select>
+               </div>
+               <div class="col-4 col-md-2">
+                  <label id="label-amount" for="form-control">amount</label>
+                  <input type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" id="amount" name="input-amount">
+               </div>
+               <div class="col-4 col-md-2">
+                  <label for="form-select">currency to convert</label>
+                  <select class="form-select" aria-label="Default select example" id="currency-to-convert">
+                  </select>
+               </div>
+               <div class="col-12 col-md-2">
+                  <button class="btn btn-primary" type="submit" id="button">Convert</button>
+               </div>
+               <div class="col-6 col-md-2">
+                  <label for="form-select">result</label>
+                  <input class="form-control" type="text" aria-label="Disabled input example" id="result" disabled readonly>
+               </div>
+            </form>
+         </div>
+         <hr id="hr">
+
+         <div class="container text-center" id="container-currencies">
+            <p id="text">. . .</p>
+            <div class="row" id="watch-currencies">
+            </div>
+         </div>
+
+      </main>
+      <footer id="footer">
+         <div class="container">
+            <div class="row-cols-lg-2" id="footer-information">
+               <div class="col">
+                  <p class="information-text">Page created by <a href="https://github.com/Mipmipp/exchange-rates" class="link">Mipmipp</a> using <a href="https://apilayer.com/marketplace/exchangerates_data-api?e=Sign+In&l=Success#details-tab" class="link">Exchange Rates Data API</a></p>
+               </div>
+               <div class="col" id="footer-contact">
+                  <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Mipmipp" role="button">
+                     <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/mipmipp/" role="button">
+                     <i class="fab fa-github"></i>
+                  </a>
+                  <a class="btn btn-outline-light btn-floating m-1" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=imipmipp@gmail.com" role="button">
+                     <i class="fa fa-envelope"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <script type="text/javascript" src="index.js"></script>
+   </body>
+</html>

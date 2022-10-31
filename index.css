@@ -1,0 +1,154 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: auto;
+    font-family: 'Manrope', sans-serif;
+}
+
+#page-layout {
+    display: grid;
+    grid-template:
+    "main"   auto
+    "footer" 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    #page-layout {
+        display: grid;
+        grid-template:
+        "main"   auto
+        "footer" 6.5rem;
+    }
+    #presentation h4 {
+        font-size: 1rem;
+        margin-top: -0.3rem;
+        margin-bottom: 2rem;
+    }
+
+    #row div {
+        margin-bottom: 2rem;
+    }
+
+    #watch-currencies {
+        margin-bottom: 1.5rem;
+    }
+}
+
+#presentation {
+    text-align: center;
+}
+
+#presentation h1 {
+    color: #fad953;
+    font-size: 2.3rem;
+    margin-top: 0.5rem;
+}
+
+#presentation h4 {
+    color: #ebd88f;
+    font-size: 1.3rem;
+    margin-top: -0.5rem;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+}
+
+#main {
+    grid-area: main;
+    background-color: #0c0008;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: #010100;
+}
+
+#row {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#row div {
+    text-align: center;
+}
+
+#row select {
+    border-color: #0c0008;
+    background-color: #ffffff;
+    color: #0c0008;
+}
+
+#row input {
+    border-color: #0c0008;
+    background-color: #ffffff;
+    color: #0c0008;
+}
+
+#row label {
+    color: #e189fe;
+    margin-bottom: 0.2rem;
+}
+
+#button {
+    border-color: #e189fe;
+    background-color: #0c0008;
+    color: #e189fe;
+}
+
+#hr {
+    color: #cc89b6;
+    margin-top: 3rem;
+}
+
+#container-currencies p {
+    color: #bdb9b9;
+}
+
+#watch-currencies {
+    margin-top: 2rem;
+}
+
+.col-3 {
+    margin-bottom: 1rem !important;
+    margin-top: 1rem !important;
+    color: #ebd88f;
+}
+
+.col-md-3 {
+    margin-bottom: 1rem !important;
+    margin-top: 1rem !important;
+    color: #ebd88f;
+}
+
+#footer-information {
+    text-align: -webkit-center
+}
+
+#footer-information div {
+    margin-top: 0.5rem;
+}
+
+.information-text {
+    color: #737373;
+}
+
+#footer-contact {
+    margin-top: -0.7rem;
+}
+
+#footer-contact a {
+    font-size: small;
+    color: #bdb9b9;
+    margin-top: -0.7rem !important;
+    border-color: #737373;
+}
+
+.link {
+    color: #bdb9b9;
+}
+
+.error {
+    color: red !important;
+}
